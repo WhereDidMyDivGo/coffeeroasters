@@ -49,6 +49,7 @@ main {
 
 .coffee_image {
     width: 100%;
+    border-radius: 10px;
 }
 
 .about_text {

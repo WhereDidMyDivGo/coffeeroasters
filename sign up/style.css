@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    margin: 0 calc(100%/18);
+    height: 7.85vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 25%;
+}
+
+.navigation_bar {
+    display: flex;
+    gap: 2.3vw;
+}
+
+.home, .about, .sign_in, .create_plan {
+    text-decoration: none;
+    color: #83888F;
+}
+
+/* main */
+
+main {
+    margin: 0 calc(100%/18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign_in_section {
+    width: 400px;
+    background-color: #2C343E;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px 50px;
+    gap: 10px;
+}
+
+.title {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.title h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+}
+
+.title h3 {
+    font-size: 16px;
+    font-family: "Barlow", serif;
+    font-weight: 400;
+}
+
+.sign_in_section label {
+    color: white;
+    margin-bottom: -10px;
+    margin-left: 5px;
+}
+
+.sign_in_section input, .sign_in_section button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+.terms input {
+    height: 15px;
+    width: 15px;
+}
+
+.terms_link {
+    color: #0E8784;
+}
+
+button {
+    background-color: #0E8784;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+form:invalid button {
+    background-color: #83888F;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease;
+}
+
+form:invalid button:hover {
+    animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+    0%,
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.sign_up_link {
+    color: white;
+    font-family: "Barlow", serif;
+}
+
+.signing_style {
+    color: #0E8784;
+}
+
+/* footer */
+
+footer {
+    margin: 100px calc(100%/18) 88px;
+    height: 8.33vw;
+    background-color: #2C343E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 85px;
+}
+
+.container_for_bottom_sorting {
+    width: 621px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small_logo {
+    height: 25px;
+}
+
+.bottom_navigation_bar {
+    font-size: 12px;
+    align-items: flex-end;
+}
+
+.social_media {
+    height: 24px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+/* animations/transitions */
+
+.facebook:hover, .twitter:hover, .instagram:hover {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(19%) saturate(521%) hue-rotate(332deg) brightness(100%) contrast(99%);
+}
+
+.navigation_bar a {
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.navigation_bar a:hover {
+    color: black;
+}
+
+.bottom_navigation_bar a:hover {
+    color: white;
+}
