@@ -1,4 +1,4 @@
-console.log('eeeeeeeeeee');
+console.log('script.js loaded');
 
 document.addEventListener('DOMContentLoaded', function() {
     const checkboxes = document.querySelectorAll('.n_checkbox');
@@ -16,12 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     details.forEach((detail, index) => {
         detail.addEventListener('toggle', function() {
-            if (detail.open) {
-                checkboxes.forEach((checkbox, checkboxIndex) => {
-                    checkbox.checked = checkboxIndex === index;
-                });
-            } else {
-                checkboxes[index].checked = false;
+            checkboxes.forEach(checkbox => checkbox.checked = false);
+
+            let highestOpenIndex = -1;
+            for (let i = details.length - 1; i >= 0; i--) {
+                if (details[i].open) {
+                    highestOpenIndex = i;
+                    break;
+                }
+            }
+
+            if (highestOpenIndex !== -1) {
+                checkboxes[highestOpenIndex].checked = true;
             }
         });
     });
