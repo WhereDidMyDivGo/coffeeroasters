@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header {
+    margin: 0 calc(100%/18);
+    height: 7.85vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 25%;
+}
+
+.navigation_bar {
+    display: flex;
+    gap: 2.3vw;
+}
+
+.home, .about, .sign_in, .create_plan {
+    text-decoration: none;
+    color: #83888F;
+}
+
+/* main */
+
+main {
+    margin: 0 calc(100%/18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* section 1 / 4 */
+
+.about_us {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.coffee_image_2 {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.text_above_coffee_image {
+    position: absolute;
+    margin-left: 5.9vw;
+}
+
+.first_text {
+    color: #FEFCF7;
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+}
+
+.second_text {
+    margin-top: 2.2vw;
+    color: #FEFCF7;
+    font-family: "Barlow", serif;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* section  2 */
+
+.our_commitment {
+    margin-top: 9.44vw;
+    width: 1110px;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.worker {
+    border-radius: 8px;
+}
+
+.our_commitment_text {
+    width: 540px;
+    height: 366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.commitment_big_text {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    font-family: "Fraunces", serif;
+    color: #333D4B;
+}
+
+.commitment_small_text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: "Barlow", serif;
+    color: #333D4B;
+}
+
+/* section  3 */
+
+.quality {
+    margin-top: 168px;
+    display: flex;
+    position: relative;
+    height: 562px;
+    width: 1280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quality_background {
+    height: 474px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    background-color: #2C343E;
+    border-radius: 8px;
+}
+
+.quality_text {
+    color: #FEFCF7;
+    width: 540px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quality_big_text {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+}
+
+.quality_small_text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400px;
+    font-family: "Barlow", serif;
+}
+
+.quality_coffee {
+    border-radius: 8px;
+    margin-bottom: auto;
+}
+
+/* section  4 */
+
+.headquarters {
+    margin-top: 168px;
+    height: 366px;
+    width: 1045px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our_headquarters {
+    color: #83888F;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+}
+
+.headquarters_cards {
+    height: 262px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.united_kingdom, .canada, .australia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.uk_cartogram {
+    width: 40.84px;
+    height: 49.07px;
+}
+
+.ca_cartogram {
+    width: 51.56px;
+    height: 49.96px;
+}
+
+.au_cartogram {
+    width: 48.97px;
+    height: 43.94px;
+}
+
+.headquarters_text_uk, .headquarters_text_ca, .headquarters_text_au {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 285px;
+    height: 167px;
+}
+
+.headquarters_big_text {
+    color: #333D4B;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+}
+
+.headquarters_small_text {
+    color: #333D4B;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Barlow", serif;
+}
+
+/* footer */
+
+footer {
+    margin: 200px calc(100%/18) 88px;
+    height: 8.33vw;
+    background-color: #2C343E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 85px;
+}
+
+.container_for_bottom_sorting {
+    width: 621px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small_logo {
+    height: 25px;
+}
+
+.bottom_navigation_bar {
+    font-size: 12px;
+    align-items: flex-end;
+}
+
+.social_media {
+    height: 24px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+/* animations/transitions */
+
+.facebook:hover, .twitter:hover, .instagram:hover {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(19%) saturate(521%) hue-rotate(332deg) brightness(100%) contrast(99%);
+}
+
+.navigation_bar a {
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.navigation_bar a:hover {
+    color: black;
+}
+
+.bottom_navigation_bar a:hover {
+    color: white;
+}
+
+.united_kingdom, .canada, .australia {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, left 0.3s ease;
+}
+
+.uk_cartogram, .ca_cartogram, .au_cartogram {
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
+}
+
+.headquarters_text_uk, .headquarters_text_ca, .headquarters_text_au {
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease;
+}
+
+.united_kingdom:hover {
+    transform: scale(1.4);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, #0E8784 0px 30px 60px -20px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
+}
+
+.united_kingdom:hover .uk_cartogram {
+    left: 40%;
+    top: 10%;
+    transform: scale(1.4);
+}
+
+.united_kingdom:hover .headquarters_text_uk {
+    left: 5%;
+}
+
+.canada:hover {
+    transform: scale(1.4);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, #0E8784 0px 30px 60px -20px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
+}
+
+.canada:hover .ca_cartogram {
+    left: 40%;
+    top: 10%;
+    transform: scale(1.4);
+}
+
+.canada:hover .headquarters_text_ca {
+    left: 5%;
+}
+
+.australia:hover {
+    transform: scale(1.4);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, #0E8784 0px 30px 60px -20px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
+}
+
+.australia:hover .au_cartogram {
+    left: 40%;
+    top: 10%;
+    transform: scale(1.4);
+}
+
+.australia:hover .headquarters_text_au {
+    left: 5%;
+}

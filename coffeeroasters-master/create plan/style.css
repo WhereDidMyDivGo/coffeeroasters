@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header {
+    margin: 0 calc(100%/18);
+    height: 7.85vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 25%;
+}
+
+.navigation_bar {
+    display: flex;
+    gap: 2.3vw;
+}
+
+.home, .about, .sign_in, .create_plan {
+    text-decoration: none;
+    color: #83888F;
+}
+
+/* main */
+
+main {
+    margin: 0 calc(100%/18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* section 1 */
+
+.create_plan_section {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.coffee_image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 445px;
+    height: 182px;
+    top: 134px;
+    left: 85px;
+    position: absolute;
+}
+
+.about_big_text {
+    color: #FEFCF7;
+    font-family: "Fraunces", serif;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 72px;
+}
+
+.about_small_text {
+    color: #FEFCF7;
+    font-family: "Barlow", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* section  2 */
+
+.second_section {
+    margin-top: 168px;
+    background-color: #2C343E;
+    width: 1280px;
+    height: 653px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards_container {
+    width: 1045px;
+    height: 453px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shapes {
+    display: flex;
+    align-items: center;
+}
+
+.circle_shape {
+    border: 2px solid #0b6e66;
+    border-radius: 50%;
+    width: 31px;
+    aspect-ratio: 1 / 1
+}
+
+.line_shape {
+    border-top: 2px solid #FDD6BA;
+    height: 1px;
+    width: 349px;
+}
+
+.works_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.works_card {
+    width: 285px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.works_number {
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+    color: #FDD6BA;
+}
+
+.works_big_text {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+    color: #FEFCF7;
+}
+
+.works_small_text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Barlow", serif;
+    color: #FEFCF7;
+}
+
+
+/* section  3 */
+
+.third_section {
+    margin-top: 168px;
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+}
+
+.side_nav {
+    width: 255px;
+    height: 356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.short_nav {
+    font-family: "Fraunces", serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    display: flex;
+    gap: 25.5px;
+    color: #83888F;
+    text-decoration: none;
+}
+
+.short_nav p {
+    user-select: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #83888F;
+    opacity: 25%;
+}
+
+.n_checkbox {
+    display: none;
+}
+
+/* ########################### transition for all (checked) nav items ############################### */
+
+.n_checkbox:checked + .short_nav .n_number {
+    color: #0E8784;
+    transition: color 0.3s ease;
+}
+
+.n_checkbox:checked + .short_nav .n_text {
+    color: #333D4B;
+    transition: color 0.3s ease;
+}
+
+/* ########################### transition for all (unchecked) nav items ############################### */
+
+.n_checkbox + .short_nav .n_number,
+.n_checkbox + .short_nav .n_text {
+    transition: color 0.3s ease;
+}
+
+
+/* ########################### cards section ############################### */
+
+.cards_section {
+    width: 730px;
+    right: 80px;
+}
+
+details {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: white;
+    padding: 10px 0;
+}
+
+summary {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    font-family: "Fraunces", serif;
+    color: #83888F;
+    margin-bottom: 56px;
+    position: relative;
+}
+
+summary::after {
+    content: '';
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-right: 4px solid #0E8784;
+    border-bottom: 4px solid #0E8784;
+    transform: rotate(45deg);
+    right: 0;
+}
+
+details[open] summary::after {
+    transform: rotate(-135deg);
+}
+
+.cards {
+    display: flex;
+    gap: 23px;
+    margin-top: 10px;
+    width: 730px;
+    height: 250px;
+}
+
+.card {
+    cursor: pointer;
+    user-select: none;
+    padding: 32px 28px;
+    border-radius: 8px;
+    background: #F4F1EB;
+    width: 228px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    gap: 24px;
+    border: none;
+}
+
+.card h3 {
+    font-family: "Fraunces", serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 900;
+    color: #333D4B;
+}
+
+.card p {
+    font-family: "Barlow", serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333D4B;
+}
+
+.c_checkbox {
+    display: none;
+}
+
+.c_checkbox + .card {
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.c_checkbox:checked + .card:hover {
+    box-shadow: rgba(14, 135, 132, 0.6) 0px 12px 20px, rgba(14, 135, 132, 0.4) 0px 16px 25px, 
+                rgba(14, 135, 132, 0.3) 0px 20px 35px;
+}
+
+.c_checkbox:checked + .card {
+    background-color: #0E8784;
+    transition: 0.3s ease;
+}
+
+.c_checkbox:checked + .card h3, .c_checkbox:checked + .card p {
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* section 4 */
+
+.fourth_section {
+    margin-top: 88px;
+    width: 1110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.order_summery_background {
+    width: 730px;
+    height: 208px;
+    background-color: #293039;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_summery {
+    width: 602px;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order_summery p {
+    font-family: "Barlow", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 50.37%;
+    color: white;
+}
+
+.order_summery h3 {
+    font-family: "Fraunces", serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 40px;
+    color: white;
+}
+
+.order_summery span {
+    color: #0e8784;
+}
+
+.create_plan_button {
+    width: 217px;
+    height: 56px;
+    background-color: #e2dedb;
+    color: #FEFCF7;
+    font-family: "Fraunces", serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25px;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.create_plan_button:hover {
+    background-color: #0E8784;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* footer */
+
+footer {
+    margin: 200px calc(100%/18) 88px;
+    height: 8.33vw;
+    background-color: #2C343E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 85px;
+}
+
+.container_for_bottom_sorting {
+    width: 621px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small_logo {
+    height: 25px;
+}
+
+.bottom_navigation_bar {
+    font-size: 12px;
+    align-items: flex-end;
+}
+
+.social_media {
+    height: 24px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(19%) saturate(521%) hue-rotate(332deg) brightness(100%) contrast(99%);
+}
+
+.navigation_bar a {
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.navigation_bar a:hover {
+    color: black;
+}
+
+.bottom_navigation_bar a:hover {
+    color: white;
+}

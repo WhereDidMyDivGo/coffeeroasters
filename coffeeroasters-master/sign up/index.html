@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coffeeroasters - sign up</title>
+    <link rel="icon" href="../images/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header id="header">
+      <img src="../images/logo.svg" alt="coffeeroasters logo" class="logo" />
+      <nav class="navigation_bar">
+        <a href="../home/index.html" class="home">HOME</a>
+        <a href="../about us/index.html" class="about">ABOUT US</a>
+        <a href="../sign in/index.html" class="sign_in">SIGN IN</a>
+        <a href="../create plan/index.html" class="create_plan"
+          >CREATE YOUR PLAN</a
+        >
+      </nav>
+    </header>
+    <main>
+      <form class="sign_in_section">
+        <div class="title">
+          <h1>Sign Up</h1>
+          <h3>Create an account to enjoy our premium coffee services.</h3>
+        </div>
+        <label for="username">Username</label>
+        <input type="text" id="username" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" minlength="8" required />
+        <div class="terms">
+          <input type="checkbox" required />
+          <label for="terms"
+            >I accept the
+            <a
+              href="https://www.termsfeed.com/dictionary/terms-and-conditions-definition/"
+              target="_blank"
+              class="terms_link"
+            >
+              Terms and Conditions
+            </a>
+          </label>
+        </div>
+        <button type="submit">Login</button>
+        <p class="sign_up_link">
+          Already have an account?
+          <a href="../sign in/index.html" class="signing_style">Sign In</a>
+        </p>
+      </form>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="container_for_bottom_sorting">
+        <img
+          src="../images/light logo.png"
+          alt="coffeeroasters logo"
+          class="logo small_logo"
+        />
+        <nav class="navigation_bar bottom_navigation_bar">
+          <a href="../home/index.html" class="home">HOME</a>
+          <a href="../about us/index.html" class="about">ABOUT US</a>
+          <a href="../create plan/index.html" class="create_plan"
+            >CREATE YOUR PLAN</a
+          >
+        </nav>
+      </div>
+      <nav class="navigation_bar social_media">
+        <a href="https://www.facebook.com/" class="facebook" target="_blank"
+          ><img src="../images/facebook icon.svg" alt="facebook" /></a
+        ><a href="https://x.com/" class="twitter" target="_blank"
+          ><img src="../images/twitter icon.svg" alt="Twitter" /></a
+        ><a href="https://www.instagram.com/" class="instagram" target="_blank"
+          ><img src="../images/instagram icon.svg" alt="Instagram"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
